@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="display">
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+        <title>World</title>
+    </head>
+    <body>
+        <h1 class="headline"> Logicke Funckie - Booleanová algebra </h1>
+        <div>
+            <h2 class="headline_paragrafs"> Základné logické funkcie </h2>
+            <p class="text_paragrafs">
+                Logické funkcie sú také funkcie, ktoré berú ako argumenty pravdivostné hodnoty a vracajú pravdivostnú hodnotu. 
+                Pravdivostná hodnota je buď pravda alebo nepravda. 
+                Z programovacích jazykov ich poznáte ako True a False, prípadne sa označujú ako 1 (pravda) a 0 (nepravda).
+                Podľa počtu argumentov ich delíme na unárne (na vstupe berú jeden argument) a binárne (berú dva argumenty). 
+                Prejdime si teraz jednotlivé funkcie, ich správanie a ako ich zvykneme označovať. 
+            </p>
+            <ul class="text_ul">
+                <li>AND</li>
+                <li>OR</li>
+                <li>XOR</li>
+                <li>NOT</li>
+            </ul>
+            </div>
+            <div>
+                <h2 class="headline_paragrafs">AND</h2>
+                <p class="text_paragrafs">
+                    And je binárna funkcia, ktorá sa správa rovnako ako spojka a v bežnom jazyku. Na to, aby bol výstup pravdivý, musia byť obidva vstupy pravdivé.<br>
+                    Pre lepšie pochopenie si ukážeme tzv. tabuľku pravdivostných hodnôt. Tá ukazuje, pre aké vstupy dáva funkcia aký výstup. Pravdivostné hodnoty si v nej označíme pomocou čísel 0 a 1.
+                    <br>Označenie: and, vo výrokovej logike ∧, v Pythone and, v iných programovacích jazykoch && (napr. v jazyku C).
+                </p>
+            </p>
+            <table class="text_table">
+                <thead>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A and B</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+  
+        <div>
+            <h2 class="headline_paragrafs">OR</h2>
+            <p class="text_paragrafs">
+                Or je binárna funkcia, ktorá pripomína spojku alebo. Niekedy, keď v bežnej reči použijeme alebo, myslíme tým buď …, alebo…, 
+                teda môže platiť iba jedna možnosť. Logické alebo však nazývame inkluzívne, čo znamená, že výstup je pravdivý, 
+                aj keď sú obidva argumenty pravdivé. Výstup z Or teda nie je pravdivý, iba keď sú oba argumenty nepravdivé. 
+                Názorne si to môžete všimnúť v tabuľke.
+                <br>Označenie: or, vo výrokovej logike ∨, v Pythone or, v iných programovacích jazykoch ||.
+            </p>
+        </p>
+        <table class="text_table">
+            <thead>
+                <th>A</th>
+                <th>B</th>
+                <th>A or B</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2 class="headline_paragrafs">Booleanová algebra</h2>
+        <p class="text_paragrafs">
+            Na logické funkcie sa môžeme dívať z rôznych pohľadov. Z hľadiska výrokovej logiky, programovacích jazykov, hradiel ,množín, ale aj časti matematiky
+            zvanej Boolova algebra (tiež Booleova, Boolovská, Booleovská).<br>
+            Boolovu algebru prvýkrát popísal v polovici 19. storočia britský matematik  <a href="https://en.wikipedia.org/wiki/George_Boole">George Boole</a>. 
+            Po ňom je pomenovaný aj typ pravdivostnej hodnoty v niektorých programovacích jazykoch (napr. bool v Pythone).
+            Boolova algebra je časť matematiky, v ktorej premenné majú jednu z dvoch hodnôt {0,1}, a sú definované operácie sčítanie, násobenie a negácia.<br>
+            <h3 class="headline_img"> Typy Hrádel</h3>
+            <img class="img_style" src="obrazok_gates.jpg" alt="Hradla Booleanovej Algebry">
+        </p>
+
+        <p class="text_paragrafs">
+            <b>Šcitanie</b>  (plus) sa správa rovnako ako logický or. Môžeme si všimnúť podobnosť s klasickým sčítaním, pre všetky prípady okrem <b>1 + 1</b>, 
+            čo sa v Boolovej algebre rovná <b>1</b>.Používame rovnaké značenie ako klasické sčítanie, teda boolovský súčet premenných a,b značíme ako <b>a + b</b>. 
+        </p>
+        <p class="text_paragrafs">
+            <b>Násobenie</b> (krát) funguje rovnako ako logický and. Násobenie v Boolovej algebre dokonca funguje rovnako ako klasické násobenie. Používame rovnaké označenie ako pri klasickom násobení,
+            teda <b>. , * </b>, alebo napíšeme premenné jednoducho pri sebe. Násobenie premennej <b>a,b</b> vieme zapísať ako <b>a . b,a * b</b>, ale aj <b>ab</b>.
+        </p>
+       <p class="text_paragrafs">
+        <b>Negácia</b>, ako už sme spomínali, predstavuje not. Špecifická je notácia, kedy negáciu značíme pomocou čiarky nad premennou, ktorú negujeme. Negáciu premennej <b>a</b> zapíšeme ako <b>~a</b>.
+        Používa sa aj zápis , čo môže pôsobiť nejednoznačne. Myslí sa tým , teda najskôr násobenie, až potom negácia.
+       </p> 
+    </div>
+    <div>
+        <h2 class="headline_paragrafs">Vlastnosti Booleanovej algebry</h2>
+        <p class="text_paragrafs">
+            Vďaka špecifickému správaniu operácií má Boolova algebra niekoľko zaujímavých vlastností, niektoré z nich si tu uvedieme.
+            (Ďalšie vlastnosti si môžete prečítať napríklad na <a href="https://cs.wikipedia.org/wiki/Booleova_algebra">českej Wikipédii</a>.)</p>
+    </div>
+    <img class="text_ul" src="obrazok.jpg" alt="Vlastnosti Booleanovej Algebry">
+    <a href="video.html" class="headline_paragrafs">Next Page</a>
+</body>
+
+</html>

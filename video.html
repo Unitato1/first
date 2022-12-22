@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="display">
+    <head>
+        <title>Video and Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="headline">Uloha a video</video></h1>
+        <h2 class="headline_paragrafs">Meno a Heslo</h2>
+        <div class="text_paragrafs">
+            Meno
+            <input type="text" placeholder="FullName" name="FullName" />
+            <br>Heslo
+            <input type="password" placeholder="Password" name="Password" />
+        </div>
+        <h2 class="headline_paragrafs">Vyhodnotenie výrazu</h2>
+        <div class="text_paragrafs">
+            Daný je výraz v boolovskej algebre. Vašou úlohou je vybrať všetky možnosti, pre ktoré sa výraz vyčísli na hodnotu 1. <br>
+            <b>a + b*~(b)*(c+~c)</b><br>
+            <form>
+            <input name="odpoved" type="checkbox" value="1" />a = 0,b = 0,c = 1 <br>
+            <input name="odpoved" type="checkbox" value="2" />a = 1,b = 1,c = 1 <br>
+            <input name="odpoved" type="checkbox" value="3" />a = 0,b = 1,c = 1 <br>
+            <input name="odpoved" type="checkbox" value="4" />a = 0,b = 0,c = 0 <br>
+            <input name="odpoved" type="checkbox" value="5" />a = 1,b = 1,c = 0 <br>
+        </form>
+        </div>
+        <h2 class="headline_paragrafs">Označenie</h2>
+        <div class="text_paragrafs">
+            Ako sa označuje negácia v Booleanovej algebre ? <br>
+            <form action="video.html">
+            <input name="odpoved" type="radio" value="1" /> && <br>
+            <input name="odpoved" type="radio" value="2" /> ~  <br>
+            <input name="odpoved" type="radio" value="3" /> || <br>
+            <input name="odpoved" type="radio" value="4" /> or <br>
+            <input name="odpoved" type="radio" value="5" /> ^  <br>
+            <input class="button" name="submit" type="button" value="Submit" class="text_paragrafs"></input><br>
+        </form>
+        </div>
+        <div id="container">
+            <div><a class="headline_paragrafs" href="index.html">Previous Page</a></div>
+            <div><iframe class="video_style" width="1280" height="960" src="https://www.youtube.com/embed/NqPhPiSer30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></class=iframe></div>
+        </div>
+    </body>
+</html>
